@@ -19,6 +19,7 @@ fun main() {
     printFilterStrings(list) {
         it.startsWith("J")
     }
+
     printFilterStrings(list, predicate)
     printFilterStrings(list, getPrintPredicate())
     printFilterStrings(list, null)

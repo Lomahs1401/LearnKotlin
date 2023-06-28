@@ -1,4 +1,4 @@
-class Person(val firstName: String = "Peter", val lastName: String = "Parker") {
+class Person(private val firstName: String = "Peter", private val lastName: String = "Parker") {
     var nickName: String? = null
         set(value) {
             field = value
@@ -14,3 +14,10 @@ class Person(val firstName: String = "Peter", val lastName: String = "Parker") {
         println("$firstName ($nickNameToPrint) $lastName")
     }
 }
+
+fun main() {
+    val person = Person()
+    person.nickName = "Lomahs"
+    person.printInfo() // Output: Peter (Lomahs) Parker
+}
+

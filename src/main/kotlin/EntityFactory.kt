@@ -58,8 +58,8 @@ fun main() {
         println(mediumEntity.info);
     }
 
-    var entity: Entity = EntityFactory.create(EntityType.EASY)
-    var msg = when (entity) {
+    val entity: Entity = EntityFactory.create(EntityType.EASY)
+    val msg = when (entity) {
         Entity.Help -> "Help Class"
         is Entity.Easy -> "Easy Class"
         is Entity.Medium -> "Medium Class"
